@@ -17,6 +17,22 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+    
+    <style>
+    @media only screen and (max-width: 40em) {
+        thead th:not(:first-child) {
+            display: none;
+        }
+
+        td, th {
+            display: block;
+        }
+
+        td[data-th]:before  {
+            content: attr(data-th);
+        }
+    }
+    </style>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -58,18 +74,25 @@
 										<h1>Schedule</h1>
 									</header>
                                     
-                                    <div class="container">
+                                    <div class="row">
+                                        
+                                        <div class="col-12-small" style="margin-bottom: 8px">
+                                            <button id="thursdayBtn" class="primary" onClick=" document.getElementById('thursday').style.display='block';document.getElementById('friday').style.display='none';document.getElementById('saturday').style.display='none';document.getElementById('sunday').style.display='none';document.getElementById('thursdayBtn').classList.add('primary');document.getElementById('fridayBtn').classList.remove('primary');document.getElementById('saturdayBtn').classList.remove('primary');document.getElementById('sundayBtn').classList.remove('primary')">Thursday</button>
+                                        </div>
     
-                                        <button id="thursdayBtn" class="primary" onClick=" document.getElementById('thursday').style.display='block';document.getElementById('friday').style.display='none';document.getElementById('saturday').style.display='none';document.getElementById('sunday').style.display='none';document.getElementById('thursdayBtn').classList.add('primary');document.getElementById('fridayBtn').classList.remove('primary');document.getElementById('saturdayBtn').classList.remove('primary');document.getElementById('sundayBtn').classList.remove('primary')">Thursday</button>
                                         
-                                        <button id="fridayBtn" class="" onClick="document.getElementById('thursday').style.display='none';document.getElementById('friday').style.display='block';document.getElementById('saturday').style.display='none';document.getElementById('sunday').style.display='none';document.getElementById('thursdayBtn').classList.remove('primary');document.getElementById('fridayBtn').classList.add('primary');document.getElementById('saturdayBtn').classList.remove('primary');document.getElementById('sundayBtn').classList.remove('primary')">Friday</button>
+                                        <div class="col-12-small" style="margin-bottom: 8px">
+                                            <button id="fridayBtn" class="" onClick="document.getElementById('thursday').style.display='none';document.getElementById('friday').style.display='block';document.getElementById('saturday').style.display='none';document.getElementById('sunday').style.display='none';document.getElementById('thursdayBtn').classList.remove('primary');document.getElementById('fridayBtn').classList.add('primary');document.getElementById('saturdayBtn').classList.remove('primary');document.getElementById('sundayBtn').classList.remove('primary')">Friday</button>
+                                        </div>
 
-                                        <button id="saturdayBtn" class="" onClick="document.getElementById('thursday').style.display='none';document.getElementById('friday').style.display='none';document.getElementById('saturday').style.display='block';document.getElementById('sunday').style.display='none';document.getElementById('thursdayBtn').classList.remove('primary');document.getElementById('fridayBtn').classList.remove('primary');document.getElementById('saturdayBtn').classList.add('primary');document.getElementById('sundayBtn').classList.remove('primary')">Saturday</button>
+                                        <div class="col-12-small" style="margin-bottom: 8px">
+                                            <button id="saturdayBtn" class="" onClick="document.getElementById('thursday').style.display='none';document.getElementById('friday').style.display='none';document.getElementById('saturday').style.display='block';document.getElementById('sunday').style.display='none';document.getElementById('thursdayBtn').classList.remove('primary');document.getElementById('fridayBtn').classList.remove('primary');document.getElementById('saturdayBtn').classList.add('primary');document.getElementById('sundayBtn').classList.remove('primary')">Saturday</button>
+                                        </div>
                                         
-                                        
-                                        <button id="sundayBtn" class="" onClick="document.getElementById('thursday').style.display='none';document.getElementById('friday').style.display='none';document.getElementById('saturday').style.display='none';document.getElementById('sunday').style.display='block';document.getElementById('thursdayBtn').classList.remove('primary');document.getElementById('fridayBtn').classList.remove('primary');document.getElementById('saturdayBtn').classList.remove('primary');document.getElementById('sundayBtn').classList.add('primary')">Sunday</button>
+                                        <div class="col-12-small" style="margin-bottom: 8px">
+                                            <button id="sundayBtn" class="" onClick="document.getElementById('thursday').style.display='none';document.getElementById('friday').style.display='none';document.getElementById('saturday').style.display='none';document.getElementById('sunday').style.display='block';document.getElementById('thursdayBtn').classList.remove('primary');document.getElementById('fridayBtn').classList.remove('primary');document.getElementById('saturdayBtn').classList.remove('primary');document.getElementById('sundayBtn').classList.add('primary')">Sunday</button>
 
-
+                                        </div>
                                     </div>
                                     
                                     <br>
@@ -80,6 +103,8 @@
                     min-width: 250px;
                 }
             </style>
+                                    
+                                    <p><i>Events are subject to change and sell out.</i></p>
     
                 <div class="table-responsive" id="thursday">
                     <table class="table table-hover table-bordered text-center">
@@ -113,7 +138,8 @@
                             <tr>
                                 <td class="align-middle time"><h4>8:30pm - 10:00pm</h4>Vegas Strip</td>
                                 <td>
-                                    <h4 class="text-light-gray">Tournament of Kings</h4>
+                                    <h4 class="text-light-gray">Tournament of Kings*</h4>
+                                    <h5 class="font-size13 text-light-gray">No Registration Needed - Our Vegas Recommendation</h5>
                                     <h5 class="font-size13 text-light-gray">$58 | 40 spots available</h5>
                                     <div class="font-size14">This dinner and show features jousting, horses, dancing, singing, and a feast fit for a king.</div>
                                 </td>
@@ -159,10 +185,10 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="align-middle time"><h4>9:00am - 6:00pm</h4>Aria Hotel Lobby</td>
+                                <td class="align-middle time"><h4>10:00am - 5:00pm</h4>Reg Desk 3B, Third Floor, West Convention Center</td>
                                 <td>
                                     <h4 class="text-light-gray">Registration Check In</h4>
-                                    <div class="font-size14">Check in attendees, hand out physical materials</div>
+                                    <div class="font-size14">Check in attendees, hand out physical materials.</div>
                                 </td>
                                 <td>
                             </tr>
@@ -202,7 +228,7 @@
                                 <td class="align-middle time"><h4>11:00am - 3:00pm</h4>Marquee Day Club Aria Pool</td>
                                 <td>
                                     <h4 class="text-light-gray">Day Pool Party at Marquee Dayclub @ The Cosmopolitan</h4>
-                                    <div class="font-size14">Little to no wait at the dedicated MIT line (just show your MegaPi credentials). Have some fun in the sun, make a splish and a splash, and enjoy this darty!</div>
+                                    <div class="font-size14">Use the dedicated MIT line (just show your MegaPi credentials). Have some fun in the sun, make a splish and a splash, and enjoy this darty!</div>
                                 </td>
                                 <td>
                             </tr>
@@ -223,7 +249,7 @@
                                 <td>
                                     <h4 class="text-light-gray">MegaPi Kickoff presented by Floating Point Group</h4>
                                     <h5 class="font-size13 text-light-gray">$20 | 1600 spots available</h5>
-                                    <div class="font-size14">Join us for the official kickoff of Pi Reunion at Hakkasan at MGM Las Vegas! We’ve booked out the whole space exclusively for Mega Pi – you won’t want to miss this!</div>
+                                    <div class="font-size14">Join us for the official kickoff of Pi Reunion at Hakkasan at MGM Las Vegas! We’ve booked out the whole space exclusively for Mega Pi – you won’t want to miss this! <strong>This event will be limited to a +1 during initial registration in order to prioritize alumni access, but will open up closer to the event dates as capacity allows.</strong></div>
                                 </td>
                                 <td>
                             </tr>
@@ -231,7 +257,8 @@
                             <tr>
                                 <td class="align-middle time"><h4>7:30pm - 9:00pm</h4>Mirage Theatre</td>
                                 <td>
-                                    <h4 class="text-light-gray">Shin Lim – LIMITLESS @ Mirage Theatre</h4>
+                                    <h4 class="text-light-gray">Shin Lim – LIMITLESS @ Mirage Theatre*</h4>
+                                    <h5 class="font-size13 text-light-gray">No Registration Needed - Our Vegas Recommendation</h5>
                                     <h5 class="font-size13 text-light-gray">$80 | 200 spots available</h5>
                                     <div class="font-size14">LIMITLESS is the newest and most exciting magic show in the world. Starring Shin Lim, the only person ever to win ‘America’s Got Talent’ TWICE, you will be mesmerized by his incredible sleight of hand and his ability to manipulate objects like a modern day wizard.</div>
                                 </td>
@@ -241,7 +268,8 @@
                             <tr>
                                 <td class="align-middle time"><h4>9:30pm - 11:00pm</h4>Treasure Island</td>
                                 <td>
-                                    <h4 class="text-light-gray">Cirque de Soleil - Mystere</h4>
+                                    <h4 class="text-light-gray">Cirque de Soleil - Mystere*</h4>
+                                    <h5 class="font-size13 text-light-gray">No Registration Needed - Our Vegas Recommendation</h5>
                                     <h5 class="font-size13 text-light-gray">$96 | 200 spots available</h5>
                                     <div class="font-size14">Inside the imagination is a playful place to be. This world is a jaunty, music-filled adventure bright with color and athleticism. Heart-pumping acrobatics, curious characters and gut-busting gags abound. It’s a joyous funhouse…and you’re at the front door. Come join the world of Mystère!</div>
                                 </td>
@@ -252,7 +280,7 @@
                             <tr>
                                 <td class="align-middle time"><h4>10:00pm - 2:00am</h4>Hakkasan Nightclub @ MGM grand</td>
                                 <td>
-                                    <h4 class="text-light-gray">Cirque de Soleil - Mystere</h4>
+                                    <h4 class="text-light-gray">MIT After Party at Hakkasan @ MGM Las Vegas</h4>
                                     <h5 class="font-size13 text-light-gray">Complimentary | 800 spots available</h5>
                                     <div class="font-size14">Keep the party going at the same location as kickoff in this after party at Hakkasan. You've pregamed, now it's time to party!! Didn't make it to kickoff? No worries, just show your MegaPi credentials in the dedicated MIT line for complimentary admission! Wanna keep the party going? You’re already here! LFGGGGGG.</div>
                                 </td>
@@ -274,6 +302,15 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <tr>
+                                <td class="align-middle time"><h4>10:00am - 3:00pm</h4>Reg Desk 3B, Third Floor, West Convention Center</td>
+                                <td>
+                                    <h4 class="text-light-gray">Registration Check In</h4>
+                                    <div class="font-size14">Check in attendees, hand out physical materials.</div>
+                                </td>
+                                <td>
+                            </tr>
+
                             <tr>
                                 <td class="align-middle time"><h4>10:00am - 1:00pm</h4><a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x80c8c764bbbbf543:0xeac9597a5eb00889?source=g.page.share">LVCC (Indoor)</a></td>
                                 <td>
@@ -318,7 +355,7 @@
                                 <td class="align-middle time"><h4>2:00pm - 4:30pm</h4>Area 15</td>
                                 <td>
                                     <h4 class="text-light-gray">Omega Mart / Area 15</h4>
-                                    <h5 class="font-size13 text-light-gray">$55 | 200-800 spots available</h5>
+                                    <h5 class="font-size13 text-light-gray">$55 | 100 spots available - more tickets may be added based on demand</h5>
                                     <div class="font-size14">Come explore an interactive, mind-bending, immersive art experience. Enter an extraordinary supermarket that bursts into surreal worlds and unexpected landscapes. Area 15 is an exhibition space filled with art experiences. Attendance includes group entrance to Omega Mart, and attendees can explore other exhibits in Area 15 before or afterwards.</div>
                                 </td>
                                 <td>
@@ -330,7 +367,7 @@
                                 <td>
                                     <h4 class="text-light-gray">Class Toast @ The Linq Promenade</h4>
                                     <h5 class="font-size13 text-light-gray">$40 | 1600 spots available</h5>
-                                    <div class="font-size14">Join us for class toast as we come together for a bittersweet farewell to this gathering of three classes. With 32 lanes booked for the night, music throughout and an open bar for three hours, it’s sure to be a night to remember!</div>
+                                    <div class="font-size14">Join us for class toast as we come together for a bittersweet farewell to this gathering of three classes. With 32 lanes booked for the night, music throughout and an open bar for three hours, it’s sure to be a night to remember!<strong>This event will be limited to a +1 during initial registration in order to prioritize alumni access, but will open up closer to the event dates as capacity allows.</strong></div>
                                 </td>
                                 <td>
                             </tr>
@@ -348,7 +385,8 @@
                             <tr>
                                 <td class="align-middle time"><h4>9:30pm - 11:00pm</h4>MGM Grand</td>
                                 <td>
-                                    <h4 class="text-light-gray">Cirque de Soleil - KA</h4>
+                                    <h4 class="text-light-gray">Cirque de Soleil - KA*</h4>
+                                    <h5 class="font-size13 text-light-gray">No Registration Needed - Our Vegas Recommendation</h5>
                                     <h5 class="font-size13 text-light-gray">$79 | 200 spots available</h5>
                                     <div class="font-size14">The battlefields are alive in KÀ as the stage shifts, and warriors are forced to fight on the land and in the sky. This spectacle combines martial arts, pyrotechnics and a unique setting that will leave you in awe!</div>
                                 </td>
@@ -396,7 +434,7 @@
                                 <td>
                                     <h4 class="text-light-gray">Dune Buggy Chase</h4>
                                     <h5 class="font-size13 text-light-gray">$223 | 30 spots available</h5>
-                                    <div class="font-size14">"Get your adrenaline fix before the journey home! This is a 60 minute, high-intensity off-road chase in a dune buggy. Read Sunbuggy’s description of the chase here. NOTE: All dune buggies will be 2-seaters, and there will be a chance to switch drivers halfway through. We recommend signing up with a buddy for maximum fun!"</div>
+                                    <div class="font-size14">Get your adrenaline fix before the journey home! This is a 60 minute, high-intensity off-road chase in a dune buggy. Read Sunbuggy’s description of the chase here. NOTE: All dune buggies will be 2-seaters, and there will be a chance to switch drivers halfway through. We recommend signing up with a buddy for maximum fun!</div>
                                 </td>
                                 <td>
                             </tr>
