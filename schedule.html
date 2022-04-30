@@ -45,6 +45,8 @@
 							<li><a href="#" class="button primary fit">Coming soon: Registration!</a></li>
 						</ul>
 					</nav>
+                
+                
 
 				<!-- Main -->
 					<div id="main" class="alt">
@@ -55,134 +57,366 @@
 									<header class="major">
 										<h1>Schedule</h1>
 									</header>
-<div class="container">
-                <div class="timetable-img text-center">
-                    <img src="img/content/timetable.png" alt="">
-                </div>
-                <div class="table-responsive">
-                    <table class="table table-bordered text-center">
+                                    
+                                    <div class="container">
+    
+                                        <button id="thursdayBtn" class="primary" onClick=" document.getElementById('thursday').style.display='block';document.getElementById('friday').style.display='none';document.getElementById('saturday').style.display='none';document.getElementById('sunday').style.display='none';document.getElementById('thursdayBtn').classList.add('primary');document.getElementById('fridayBtn').classList.remove('primary');document.getElementById('saturdayBtn').classList.remove('primary');document.getElementById('sundayBtn').classList.remove('primary')">Thursday</button>
+                                        
+                                        <button id="fridayBtn" class="" onClick="document.getElementById('thursday').style.display='none';document.getElementById('friday').style.display='block';document.getElementById('saturday').style.display='none';document.getElementById('sunday').style.display='none';document.getElementById('thursdayBtn').classList.remove('primary');document.getElementById('fridayBtn').classList.add('primary');document.getElementById('saturdayBtn').classList.remove('primary');document.getElementById('sundayBtn').classList.remove('primary')">Friday</button>
+
+                                        <button id="saturdayBtn" class="" onClick="document.getElementById('thursday').style.display='none';document.getElementById('friday').style.display='none';document.getElementById('saturday').style.display='block';document.getElementById('sunday').style.display='none';document.getElementById('thursdayBtn').classList.remove('primary');document.getElementById('fridayBtn').classList.remove('primary');document.getElementById('saturdayBtn').classList.add('primary');document.getElementById('sundayBtn').classList.remove('primary')">Saturday</button>
+                                        
+                                        
+                                        <button id="sundayBtn" class="" onClick="document.getElementById('thursday').style.display='none';document.getElementById('friday').style.display='none';document.getElementById('saturday').style.display='none';document.getElementById('sunday').style.display='block';document.getElementById('thursdayBtn').classList.remove('primary');document.getElementById('fridayBtn').classList.remove('primary');document.getElementById('saturdayBtn').classList.remove('primary');document.getElementById('sundayBtn').classList.add('primary')">Sunday</button>
+
+
+                                    </div>
+                                    
+                                    <br>
+                                    
+
+            <style>
+                .time {
+                    min-width: 250px;
+                }
+            </style>
+    
+                <div class="table-responsive" id="thursday">
+                    <table class="table table-hover table-bordered text-center">
                         <thead>
                             <tr class="bg-light-gray">
-                                <th class="text-uppercase">Time
+                                <th class="text-uppercase">Time & Location
                                 </th>
-                                <th class="text-uppercase">Thursday</th>
-                                <th class="text-uppercase">Friday</th>
-                                <th class="text-uppercase">Saturday</th>
-                                <th class="text-uppercase">Sunday</th>
+                                <th class="text-uppercase">Event Info</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="align-middle">09:00am</td>
+                                <td class="align-middle time"><h4>7:00pm - 9:00pm</h4>Conference Room @ Aria</td>
                                 <td>
-                                    <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Music</span>
-                                    <div class="margin-10px-top font-size14">9:00-10:00</div>
-                                    <div class="font-size13 text-light-gray">Ivana Wong</div>
+                                    <h4 class="text-light-gray">Registration Check In</h4>
+                                    <div class="font-size14">Check in attendees, hand out physical materials</div>
                                 </td>
                                 <td>
-                                    <span class="bg-sky padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Dance</span>
-                                    <div class="margin-10px-top font-size14">9:00-10:00</div>
-                                    <div class="font-size13 text-light-gray">Ivana Wong</div>
-                                </td>
-                                <td>
-                                    <span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Art</span>
-                                    <div class="margin-10px-top font-size14">9:00-10:00</div>
-                                    <div class="font-size13 text-light-gray">Kate Alley</div>
-                                </td>
-                                <td>
-                                    <span class="bg-pink padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">English</span>
-                                    <div class="margin-10px-top font-size14">9:00-10:00</div>
-                                    <div class="font-size13 text-light-gray">James Smith</div>
-                                </td>
                             </tr>
 
                             <tr>
-                                <td class="align-middle">10:00am</td>
+                                <td class="align-middle time"><h4>8:00pm - 10:00pm</h4>Top Golf @ MGM Grand</td>
                                 <td>
-                                    <span class="bg-purple padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Art</span>
-                                    <div class="margin-10px-top font-size14">10:00-11:00</div>
-                                    <div class="font-size13 text-light-gray">Kate Alley</div>
-                                </td>
-                                <td>
-                                    <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Yoga</span>
-                                    <div class="margin-10px-top font-size14">10:00-11:00</div>
-                                    <div class="font-size13 text-light-gray">Marta Healy</div>
+                                    <h4 class="text-light-gray">Top Golf</h4>
+                                    <h5 class="font-size13 text-light-gray">$100 | 100 spots available</h5>
+                                    <div class="font-size14">Kick-off Mega Pi Reunion with a bang by joining us for a fun twist to your typical driving range. Accompanied with food and beverage, come take some swings in a variety of interactive games while catching up with both old and new friends alike. With multiple bars, a plethora of TV screens, and even swimming pools; this will be an event you won’t want to miss!</div>
                                 </td>
                                 <td>
-                                    <span class="bg-pink padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">English</span>
-                                    <div class="margin-10px-top font-size14">10:00-11:00</div>
-                                    <div class="font-size13 text-light-gray">James Smith</div>
-                                </td>
-                                <td class="bg-light-gray">
-
-                                </td>
                             </tr>
+                            
+                            <tr>
+                                <td class="align-middle time"><h4>8:30pm - 10:00pm</h4>Vegas Strip</td>
+                                <td>
+                                    <h4 class="text-light-gray">Tournament of Kings</h4>
+                                    <h5 class="font-size13 text-light-gray">$58 | 40 spots available</h5>
+                                    <div class="font-size14">This dinner and show features jousting, horses, dancing, singing, and a feast fit for a king.</div>
+                                </td>
+                                <td>
+                            </tr>
+
 
                             <tr>
-                                <td class="align-middle">11:00am</td>
+                                <td class="align-middle time"><h4>8:45pm - 11:00pm</h4>Las Vegas Airport</td>
                                 <td>
-                                    <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Break</span>
-                                    <div class="margin-10px-top font-size14">11:00-12:00</div>
+                                    <h4 class="text-light-gray">Night-time Strip Helicopter tour</h4>
+                                    <h5 class="font-size13 text-light-gray">$128 | 24 spots available</h5>
+                                    <div class="font-size14">A helicopter tour is a fast and exciting way to experience the Las Vegas Strip and Downtown Las Vegas. See the space beam of the Luxor, the New York-New York skyscrapers, the Eiffel Tower at Paris, the fountains of the Bellagio, and make a hairpin turn around the 1000-foot-tall Stratosphere! You'll see all these sights once more en route back to the terminal.</div>
                                 </td>
                                 <td>
-                                    <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Break</span>
-                                    <div class="margin-10px-top font-size14">11:00-12:00</div>
-                                </td>
-                                <td>
-                                    <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Break</span>
-                                    <div class="margin-10px-top font-size14">11:00-12:00</div>
-                                </td>
-                                <td>
-                                    <span class="bg-lightred padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Break</span>
-                                    <div class="margin-10px-top font-size14">11:00-12:00</div>
-                                </td>
                             </tr>
 
+                            
                             <tr>
-                                <td class="align-middle">12:00pm</td>
-                                <td class="bg-light-gray">
-
+                                <td class="align-middle time"><h4>9:00pm - 12:00am</h4>Vegas Strip (Start @ Aria)</td>
+                                <td>
+                                    <h4 class="text-light-gray">Vegas Strip Bar Crawl</h4>
+                                    <div class="font-size14">We will meet in the Aria lobby and then spend the evening exploring bars along the strip. Attendees will purchase their own drinks. Choose your own adventure or <a href="https://goo.gl/maps/aQ7y8WLdMMKa3Fuh8">follow our suggested path here.</a></div>
                                 </td>
                                 <td>
-                                    <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Music</span>
-                                    <div class="margin-10px-top font-size14">12:00-1:00</div>
-                                    <div class="font-size13 text-light-gray">Ivana Wong</div>
-                                </td>
-                                <td class="bg-light-gray">
-
-                                </td>
-                                <td>
-                                    <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Yoga</span>
-                                    <div class="margin-10px-top font-size14">12:00-1:00</div>
-                                    <div class="font-size13 text-light-gray">Marta Healy</div>
-                                </td>
                             </tr>
 
-                            <tr>
-                                <td class="align-middle">01:00pm</td>
-                                <td class="bg-light-gray">
-
-                                </td>
-                                <td>
-                                    <span class="bg-pink padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">English</span>
-                                    <div class="margin-10px-top font-size14">1:00-2:00</div>
-                                    <div class="font-size13 text-light-gray">James Smith</div>
-                                </td>
-                                <td>
-                                    <span class="bg-green padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Yoga</span>
-                                    <div class="margin-10px-top font-size14">1:00-2:00</div>
-                                    <div class="font-size13 text-light-gray">Marta Healy</div>
-                                </td>
-                                <td>
-                                    <span class="bg-yellow padding-5px-tb padding-15px-lr border-radius-5 margin-10px-bottom text-white font-size16  xs-font-size13">Music</span>
-                                    <div class="margin-10px-top font-size14">1:00-2:00</div>
-                                    <div class="font-size13 text-light-gray">Ivana Wong</div>
-                                </td>
-                            </tr>
+                            
                         </tbody>
                     </table>
                 </div>
-            </div>								</div>
+    
+    
+    
+                <div class="table-responsive" id="friday" style="display:none;">
+                    <table class="table table-hover table-bordered text-center">
+                        <thead>
+                            <tr class="bg-light-gray">
+                                <th class="text-uppercase">Time & Location
+                                </th>
+                                <th class="text-uppercase">Event Info</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align-middle time"><h4>9:00am - 6:00pm</h4>Aria Hotel Lobby</td>
+                                <td>
+                                    <h4 class="text-light-gray">Registration Check In</h4>
+                                    <div class="font-size14">Check in attendees, hand out physical materials</div>
+                                </td>
+                                <td>
+                            </tr>
+
+                            <tr>
+                                <td class="align-middle time"><h4>8:00am - 12:00pm</h4>Red Rock Canyon (Leave from Aria)</td>
+                                <td>
+                                    <h4 class="text-light-gray">Red Rock Canyon Hike</h4>
+                                    <h5 class="font-size13 text-light-gray">$25 | 44 spots available</h5>
+                                    <div class="font-size14"> Escape the glitz of Vegas with a few hours in nature. Start the day with some sun & enjoy the views from beautiful Red Rock Canyon. Bus pick-up and drop off from the Aria entrance is included!</div>
+                                </td>
+                                <td>
+                            </tr>
+                            
+                            
+                            <tr>
+                                <td class="align-middle time"><h4>9:00am - 12:00pm</h4>TLV (Outdoor) (121 E Sunset Rd, Las Vegas, NV 89119, United States)</td>
+                                <td>
+                                    <h4 class="text-light-gray">Trapeze & Aerial Arts Class @ Trapeze Las Vegas</h4>
+                                    <h5 class="font-size13 text-light-gray">$80 | 40 spots available</h5>
+                                    <div class="font-size14">Try your hand at some circus arts with this introductory class for the flying trapeze, aerial  silks/lyra, and more! This is a private class for Pi attendees only. NOTE: this class will take place in an OUTDOOR gym!</div>
+                                </td>
+                                <td>
+                            </tr>
+                                                        
+                            <tr>
+                                <td class="align-middle time"><h4>11:00am - 3:00pm</h4>Aria Resort</td>
+                                <td>
+                                    <h4 class="text-light-gray">Aria Pool Chill</h4>
+                                    <div class="font-size14">No need to wander far, come hang out at our private cabana by the Aria hotel pool!</div>
+                                </td>
+                                <td>
+                            </tr>
+                            
+                            
+                            <tr>
+                                <td class="align-middle time"><h4>11:00am - 3:00pm</h4>Marquee Day Club Aria Pool</td>
+                                <td>
+                                    <h4 class="text-light-gray">Day Pool Party at Marquee Dayclub @ The Cosmopolitan</h4>
+                                    <div class="font-size14">Little to no wait at the dedicated MIT line (just show your MegaPi credentials). Have some fun in the sun, make a splish and a splash, and enjoy this darty!</div>
+                                </td>
+                                <td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="align-middle time"><h4>2:00pm - 5:00pm</h4>Henderson Airport</td>
+                                <td>
+                                    <h4 class="text-light-gray">Grand Canyon Aerial Tour</h4>
+                                    <h5 class="font-size13 text-light-gray">$194 | 30 spots available</h5>
+                                    <div class="font-size14">This tour includes aerial views of the Hoover Dam and Lake Mead as well as the spectacular Grand Canyon, from the comfort of an air-conditioned aircraft.</div>
+                                </td>
+                                <td>
+                            </tr>
+
+                            <tr>
+                                <td class="align-middle time"><h4>7:00pm - 9:00pm</h4>Hakkasan Nightclub @ MGM Grand</td>
+                                <td>
+                                    <h4 class="text-light-gray">MegaPi Kickoff presented by Floating Point Group</h4>
+                                    <h5 class="font-size13 text-light-gray">$20 | 1600 spots available</h5>
+                                    <div class="font-size14">Join us for the official kickoff of Pi Reunion at Hakkasan at MGM Las Vegas! We’ve booked out the whole space exclusively for Mega Pi – you won’t want to miss this!</div>
+                                </td>
+                                <td>
+                            </tr>
+
+                            <tr>
+                                <td class="align-middle time"><h4>7:30pm - 9:00pm</h4>Mirage Theatre</td>
+                                <td>
+                                    <h4 class="text-light-gray">Shin Lim – LIMITLESS @ Mirage Theatre</h4>
+                                    <h5 class="font-size13 text-light-gray">$80 | 200 spots available</h5>
+                                    <div class="font-size14">LIMITLESS is the newest and most exciting magic show in the world. Starring Shin Lim, the only person ever to win ‘America’s Got Talent’ TWICE, you will be mesmerized by his incredible sleight of hand and his ability to manipulate objects like a modern day wizard.</div>
+                                </td>
+                                <td>
+                            </tr>
+
+                            <tr>
+                                <td class="align-middle time"><h4>9:30pm - 11:00pm</h4>Treasure Island</td>
+                                <td>
+                                    <h4 class="text-light-gray">Cirque de Soleil - Mystere</h4>
+                                    <h5 class="font-size13 text-light-gray">$96 | 200 spots available</h5>
+                                    <div class="font-size14">Inside the imagination is a playful place to be. This world is a jaunty, music-filled adventure bright with color and athleticism. Heart-pumping acrobatics, curious characters and gut-busting gags abound. It’s a joyous funhouse…and you’re at the front door. Come join the world of Mystère!</div>
+                                </td>
+                                <td>
+                            </tr>
+
+
+                            <tr>
+                                <td class="align-middle time"><h4>10:00pm - 2:00am</h4>Hakkasan Nightclub @ MGM grand</td>
+                                <td>
+                                    <h4 class="text-light-gray">Cirque de Soleil - Mystere</h4>
+                                    <h5 class="font-size13 text-light-gray">Complimentary | 800 spots available</h5>
+                                    <div class="font-size14">Keep the party going at the same location as kickoff in this after party at Hakkasan. You've pregamed, now it's time to party!! Didn't make it to kickoff? No worries, just show your MegaPi credentials in the dedicated MIT line for complimentary admission! Wanna keep the party going? You’re already here! LFGGGGGG.</div>
+                                </td>
+                                <td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+    
+    
+                <div class="table-responsive" id="saturday" style="display:none;">
+                    <table class="table table-hover table-bordered text-center">
+                        <thead>
+                            <tr class="bg-light-gray">
+                                <th class="text-uppercase">Time & Location
+                                </th>
+                                <th class="text-uppercase">Event Info</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align-middle time"><h4>10:00am - 1:00pm</h4><a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x80c8c764bbbbf543:0xeac9597a5eb00889?source=g.page.share">LVCC (Indoor)</a></td>
+                                <td>
+                                    <h4 class="text-light-gray">Trapeze & Circus Arts Class @ LVCC</h4>
+                                    <h5 class="font-size13 text-light-gray">$75 | 28 spots available</h5>
+                                    <div class="font-size14">Try your hand at the circus arts with this introductory class for the flying trapeze, aerial silks/lyra, and ‘ninja warrior’ stunts! This is a private class for Pi attendees only. NOTE: this class will take place in an INDOOR gym!</div>
+                                </td>
+                                <td>
+                            </tr>
+
+                            <tr>
+                                <td class="align-middle time"><h4>11:00am - 3:00pm</h4>Aria Pool</td>
+                                <td>
+                                    <h4 class="text-light-gray">Aria Pool Chill @ Aria Resort</h4>
+                                    <div class="font-size14">Had too much fun on Friday and wanna chill today? No need to wander far, come hang out at our private cabana by the Aria hotel pool! Relaxing pool vibes await!</div>
+                                </td>
+                                <td>
+                            </tr>
+
+                            <tr>
+                                <td class="align-middle time"><h4>12:00am - 3:00pm</h4>Liquid Pool</td>
+                                <td>
+                                    <h4 class="text-light-gray">MIT Pool Takeover at Liquid Pool Party</h4>
+                                    <div class="font-size14">Dedicated MIT line with little to no wait, complimentary entry and a FREE 1st cocktail. Shake off the night before and get wet in the 1,200 square foot main pool! You must show your MegaPi credentials for free admission.</div>
+                                </td>
+                                <td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="align-middle time"><h4>2:00pm - 4:30pm</h4>Vegas Indoor Skydiving</td>
+                                <td>
+                                    <h4 class="text-light-gray">Indoor Skydive</h4>
+                                    <h5 class="font-size13 text-light-gray">$55 | 30 spots available</h5>
+                                    <div class="font-size14">The “Learn To Fly” package is designed for the first time flyer and includes training class, equipment rental, and 2 Flights for 1 Person. 2 30 minute blocks of 15 persons each. Visit <a href="https://tinyurl.com/e6z46ywd" target="_blank">the skydiving website</a> for height/weight guidelines.</div>
+                                </td>
+                                <td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="align-middle time"><h4>2:00pm - 4:30pm</h4>Area 15</td>
+                                <td>
+                                    <h4 class="text-light-gray">Omega Mart / Area 15</h4>
+                                    <h5 class="font-size13 text-light-gray">$55 | 200-800 spots available</h5>
+                                    <div class="font-size14">Come explore an interactive, mind-bending, immersive art experience. Enter an extraordinary supermarket that bursts into surreal worlds and unexpected landscapes. Area 15 is an exhibition space filled with art experiences. Attendance includes group entrance to Omega Mart, and attendees can explore other exhibits in Area 15 before or afterwards.</div>
+                                </td>
+                                <td>
+                            </tr>
+
+                                                        
+                            <tr>
+                                <td class="align-middle time"><h4>6:00pm - 9:00pm</h4>Brooklyn Bowl</td>
+                                <td>
+                                    <h4 class="text-light-gray">Class Toast @ The Linq Promenade</h4>
+                                    <h5 class="font-size13 text-light-gray">$40 | 1600 spots available</h5>
+                                    <div class="font-size14">Join us for class toast as we come together for a bittersweet farewell to this gathering of three classes. With 32 lanes booked for the night, music throughout and an open bar for three hours, it’s sure to be a night to remember!</div>
+                                </td>
+                                <td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="align-middle time"><h4>7:30pm - 10:30pm</h4>Pinot's Palette</td>
+                                <td>
+                                    <h4 class="text-light-gray">Wine and Paint Night</h4>
+                                    <h5 class="font-size13 text-light-gray">$39 | 48 spots available</h5>
+                                    <div class="font-size14">Paint, drink, and have fun at your a Pinot's Palette studio! It’s a fun-filled, party atmosphere where you and your friends can talk, laugh, paint and drink.</div>
+                                </td>
+                                <td>
+                            </tr>
+
+                            <tr>
+                                <td class="align-middle time"><h4>9:30pm - 11:00pm</h4>MGM Grand</td>
+                                <td>
+                                    <h4 class="text-light-gray">Cirque de Soleil - KA</h4>
+                                    <h5 class="font-size13 text-light-gray">$79 | 200 spots available</h5>
+                                    <div class="font-size14">The battlefields are alive in KÀ as the stage shifts, and warriors are forced to fight on the land and in the sky. This spectacle combines martial arts, pyrotechnics and a unique setting that will leave you in awe!</div>
+                                </td>
+                                <td>
+                            </tr>
+
+                            <tr>
+                                <td class="align-middle time"><h4>9:30pm - 2:00am</h4>JEWEL Nightclub</td>
+                                <td>
+                                    <h4 class="text-light-gray">Jewel Night Club @ Aria Resort & Casino</h4>
+                                    <div class="font-size14">Dedicated MIT line, complimentary entry and a FREE 1st cocktail! You must show your MegaPi credentials for free admission.</div>
+                                </td>
+                                <td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="align-middle time"><h4>10:00pm - 1:00am</h4>The Park</td>
+                                <td>
+                                    <h4 class="text-light-gray">Hangout @ The Park</h4>
+                                    <div class="font-size14">Clubbing or nightlife not really your scene? Come chill at The Park until bedtime. Blankets, lemonade and pizza provided.</div>
+                                </td>
+                                <td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+    
+
+                <div class="table-responsive" id="sunday" style="display:none;">
+                    <table class="table table-hover table-bordered text-center">
+                        <thead>
+                            <tr class="bg-light-gray">
+                                <th class="text-uppercase">Time & Location
+                                </th>
+                                <th class="text-uppercase">Event Info</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr>
+                                <td class="align-middle time"><h4>9:30am - 1:30pm</h4>Vegas Dunes (Leave from Aria)</td>
+                                <td>
+                                    <h4 class="text-light-gray">Dune Buggy Chase</h4>
+                                    <h5 class="font-size13 text-light-gray">$223 | 30 spots available</h5>
+                                    <div class="font-size14">"Get your adrenaline fix before the journey home! This is a 60 minute, high-intensity off-road chase in a dune buggy. Read Sunbuggy’s description of the chase here. NOTE: All dune buggies will be 2-seaters, and there will be a chance to switch drivers halfway through. We recommend signing up with a buddy for maximum fun!"</div>
+                                </td>
+                                <td>
+                            </tr>
+
+                            <tr>
+                                <td class="align-middle time"><h4>11:00am - 3:00pm</h4>Aria Pool</td>
+                                <td>
+                                    <h4 class="text-light-gray">Aria Pool Chill @ Aria Resort</h4>
+                                    <div class="font-size14">It's our last day of Pi, come to our private cabana by the Aria hotel pool for a casual pool hang before heading out!</div>
+                                </td>
+                                <td>
+                            </tr>
+
+                            
+                        </tbody>
+                    </table>
+                </div>
+    
+
+                                </div>				
 							</section>
 
 					</div>
@@ -202,8 +436,7 @@
 						</div>
 					</footer>
 
-			</div>
-
+        
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
